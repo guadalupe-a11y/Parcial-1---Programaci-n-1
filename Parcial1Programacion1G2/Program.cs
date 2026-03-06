@@ -42,24 +42,25 @@ namespace Parcial1Programacion1G2
             Console.WriteLine("====================================");
             Console.WriteLine();
 
-            // TODO: Crear una lista de tipo Vehiculo
-            // Ejemplo: List<Vehiculo> vehiculos = new List<Vehiculo>();
+            // Lista de vehículos
+            List<Vehiculo> vehiculos = new List<Vehiculo>();
 
+            // Crear objetos de las clases hijas
+            // `Carro` y `Moto` deben estar definidos únicamente en sus respectivos archivos (.cs).
+            Carro miCarro = new Carro("Toyota", "Corolla", 2024, 4);
+            Moto miMoto = new Moto("Honda", "CBR600RR", 2023, "600cc");
 
-            // TODO: Crear al menos DOS objetos de clases hijas
-            // Ejemplo: Carro, Moto
+            // Agregar los objetos a la lista
+            vehiculos.Add(miCarro);
+            vehiculos.Add(miMoto);
 
-
-            // TODO: Agregar los objetos a la lista
-
-
-            // TODO: Recorrer la lista usando foreach
-
-
-            // TODO: Llamar a los métodos
-            // MostrarInformacion()
-            // Encender()
-
+            // Recorrer la lista usando foreach y llamar a los métodos
+            foreach (Vehiculo v in vehiculos)
+            {
+                v.MostrarInformacion();
+                v.Encender();
+            }
+            Console.WriteLine("------------------------------------");
 
             Console.WriteLine();
             Console.WriteLine("Programa finalizado.");
