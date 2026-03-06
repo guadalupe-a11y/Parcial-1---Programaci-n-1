@@ -1,1 +1,1 @@
-# Parcial-1---Programaci-n-1
+# Parcial-1---Programación-1
